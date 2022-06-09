@@ -1,0 +1,12 @@
+{
+    "phpserver.browser": "",
+    "code-runner.clearPreviousOutput": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.colorTheme": "Visual Studio Dark - C++",
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "editor.wordWrap": "on",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.formatOnSave": true,
+    "files.autoSave": "afterDelay"
+    }

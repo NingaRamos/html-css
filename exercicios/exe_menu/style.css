@@ -1,0 +1,24 @@
+@charset "UTF-8";
+body{
+    background-color: rgba(100, 103, 104, 0.842);
+    font: 0.8em Verdana, sans-serif;
+}
+
+ul{
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 150px;
+    border-bottom: dotted 1px red;
+}
+
+ul li{
+    position: relative;
+}
+li lu{
+    position: absolute;
+    top: 0;
+    left: 149px;
+    display: none;
+}

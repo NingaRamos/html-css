@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+body{
+    background-color: gray;
+    margin: 0;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    padding: 3px;
+    border-radius: 10px;
+    text-align: justify;    
+    min-width: 300;
+    max-width: 1000px;
+    margin: auto;
+    
+}
+*{ 
+    /*box-sizing: border-box;*/
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    min-height: 90px;
+    text-align: center;
+    padding-top: 30px;
+    background-color: rgb(61, 56, 56);
+    border-radius: 10px; 
+    
+    
+   /* padding: 10px;
+    border-radius: 10px;    
+    min-width: 300;
+    max-width: 1000px;
+    margin: auto;*/
+    
+    
+}
+
+header > h1 {
+    color: white;
+   /* text-align: center;*/
+    font-size: 4em;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.315);
+    
+
+    
+}
+
+nav {
+   /* width: 100%;*/
+    min-height: 100%;
+    background-color: blue;
+    overflow: hidden; 
+    margin: auto;
+    padding: 10px ;
+    text-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+    background-color: blue;
+    /*text-align: left;*/
+
+   /* text-align: center;*/
+    
+  /* min-width: 340;
+   max-width: 1000px;
+   margin: auto;*/
+   border-radius: 5px;
+     
+  }
+  /* .......menu nav.......*/
+nav a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    
+   /* float: left;
+    width: 12%;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 1.2em;*/
+  }
+  
+nav a:hover{
+    background-color: black;
+    transition-duration: 0.3s;
+}
+nav-mobile a {
+    display: none;
+}
+/* ....fim menu nav.......*/
+/* .......menu nav responsivo (icon).......*/
+
+@media screen and (max-width: 600px) {
+    nav a {
+     /* float: none;*/
+      display: none;
+    /*  text-align: center;
+      font-size: 1em;*/
+    }
+    header > h1{
+        font-size: 1.8em;
+    }
+}
+@media screen and (max-width: 500px) {
+   
+}
+
+/* .......fim menu nav responsivo (icon).......*/
+main{
+
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: justify;
+    
+   /* min-width: 300;
+    max-width: 1000px;
+    margin: auto;
+   /* border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;*/
+    /*activar para a borda esquerda e direita de baixo*/
+}
+
+footer{
+    background-color: rgba(43, 39, 38, 0.897);
+    color: white;
+
+    border-radius: 10px;
+    text-align:justify ;
+    
+    min-width: 300;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+}
+ footer > p{
+    text-align: center;
+    padding: 2px  0;
+    min-height: 0px;
+ }

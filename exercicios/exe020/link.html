@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+        }
+        a:visited{
+            color: rebeccapurple;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+        .especial::before{
+            content: "⇒";
+        }
+        .especial::after{
+            content: "⇐";
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizar links</h1>
+    <li><a href="https://sigarra.up.pt/feup/pt/web_page.inicial" target="_blank">Feup</a></li>
+    <li><a href="https://www.telanon.info/" target="_blank" class="especial">Tela non</a></li>
+    <li><a href="https://www.stp-press.st/" target="_blank">STP Press</a></li>
+</body>
+</html>

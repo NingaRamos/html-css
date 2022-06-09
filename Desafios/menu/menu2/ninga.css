@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+/* import font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+    font-family: "Poppins", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-family: "Poppins", ,sans-serif;*/
+    /*original*/
+    /**/
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*header*/
+header {
+    background-color: rgba(233, 229, 227, 0.568);
+    box-shadow: 1px 1px 5px 0px var(--gray);
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+/* Logo */
+.logo {
+    display: inline-block;
+    color: var(--white);
+    /*  font-size: 56px; /*original*/
+    font-size: 3.5em;
+    margin-left: 10px;
+    
+}
+
+/* Nav menu*/
+.nav{
+    width: 30%;
+    height: 100%;
+    position: fixed;
+   /* position: relative;*/
+    background-color: goldenrod;
+    overflow: hidden;
+   /* float: left;*/
+}
+
+.menu a{
+    display: block;
+    padding: 30px;
+    color: rgb(20, 3, 1);
+}
+
+.menu a:hover{
+    background-color:green;
+}
+
+.nav{
+   max-height: 0;
+   transition: max-height .2s ease-out;
+}
+
+/*Menu icon*/
+.hamb{
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}
+
+/* Style lab tag*/
+.hamb-line{
+    background-color: red;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;/*24px*/
+}
+
+.hamb-line::before,
+.hamb-line::after{
+    background-color: red;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+  /*  transition: all .2s ease-out;*/
+    width: 100%;
+}
+
+.hamb-line::before{
+    top: 5px;
+}
+.hamb-line::after{
+    top: -5px;
+}
+
+
+/* Hide checkbox */
+
+.side-menu {
+    display: none;
+}
+
+/* Toggle menu icon */
+
+.side-menu:checked ~ nav{
+    max-height: 100%;
+ }
+
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}

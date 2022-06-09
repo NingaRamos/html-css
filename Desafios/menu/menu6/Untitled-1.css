@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+h2{
+    vertical-align: center;
+    text-align: center;
+    font-size: 660em;
+}
+
+html, body{
+    margin: 0;
+    height:100%;
+    background-color: greenyellow;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: Releway;
+    box-sizing: border-box;
+}
+
+.top-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: 00BAF0;
+    background: linear-gradient(to left, #f46b45, #eea849);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #ffff;
+  font-size: 6600000em;
+
+
+}

@@ -1,0 +1,177 @@
+/*https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/   */
+@charset "UTF-8";
+
+/* import font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+/* variables*/
+
+:root {
+    --white: #f9f9f9;
+    --black: #36383F;
+    --gray: #85888C;
+}
+
+/* variables*/
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+    font-family: "Poppins", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-family: "Poppins", ,sans-serif;*/
+    /*original*/
+    /**/
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*header*/
+header {
+    background-color: var(--black);
+    box-shadow: 1px 1px 5px 0px var(--gray);
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+/* Logo */
+.logo {
+    display: inline-block;
+    color: var(--white);
+    /*  font-size: 56px; /*original*/
+    font-size: 3.5em;
+    margin-left: 10px;
+}
+
+/* Nav menu*/
+.nav {
+    width: 40%;
+    /*original 30%*/
+    height: 100%;
+    position: fixed;
+   /* background-color: var(--black);*/
+   background-color: greenyellow;
+    overflow: hidden;
+}
+
+.menu a {
+    display: block;
+    padding: 30px;
+    color: var(--white);
+}
+
+.menu a:hover {
+    background-color: var(--gray);
+}
+
+.nav {
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/*Menu icon*/
+.hamb {
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+    
+}
+
+/* Style lab tag*/
+.hamb-line {
+    background-color: var(--white);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;/*24px*/
+}
+
+/* Style span tag */
+
+
+.hamb-line::before,
+.hamb-line::after{
+    background: var(--white);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+
+}
+
+.hamb-line::before{
+    top: 5px;
+}
+
+.hamb-line::after{
+    top: -5px;
+}
+
+/* Hide checkbox */
+
+.side-menu {
+    display: none;
+}
+
+/* Toggle menu icon */
+
+.side-menu:checked ~ nav{
+   max-height: 100%;
+}
+
+
+.side-menu:checked ~  .hamb .hamb-line {
+    background: transparent;
+}
+
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+
+
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+/* Responsiveness */
+/*
+
+@media (min-width: 805px) {
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+    }
+    .menu li{
+        float: left;
+    }
+    .menu a:hover{
+        background-color: transparent;
+        color: var(--gray);
+
+    }
+
+    .hamb{
+        display: none;
+    }
+}
